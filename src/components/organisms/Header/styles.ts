@@ -78,7 +78,7 @@ export const MobileNav = styled(motion.div)`
   box-shadow: -5px 0px 50px 0px rgba(0, 0, 0, 0.75);
   background-color: ${({ theme }) => theme.colors.background};
   display: flex;
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   left: 0;
   position: fixed;
