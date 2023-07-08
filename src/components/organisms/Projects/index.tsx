@@ -3,9 +3,9 @@ import { SiGithub } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
 import { useAnimation, useInView } from "framer-motion";
 import * as S from "./styles";
-import Visao from "../../../assets/images/Visao.png";
-import Agency from "../../../assets/images/Agency.png";
-import Electrum from "../../../assets/images/Electrum.png";
+import Visao from "../../../assets/images/Visao.webp";
+import Agency from "../../../assets/images/Agency.webp";
+import Electrum from "../../../assets/images/Electrum.webp";
 
 export const Projects = () => {
   const ref = useRef(null);
@@ -109,13 +109,14 @@ export const Projects = () => {
                       href="https://pesquisas-visao.vercel.app/"
                       target="_blank"
                     >
-                      Site <BiLinkExternal></BiLinkExternal>
+                      Site{" "}
+                      <BiLinkExternal aria-label="Ir para o site do projeto"></BiLinkExternal>
                     </a>
                     <a
                       href="https://github.com/W7EVEN/Brainful"
                       target="_blank"
                     >
-                      Código <SiGithub></SiGithub>
+                      Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
                     </a>
                   </S.LinksContainer>
                 </S.TextWrapper>
@@ -167,13 +168,14 @@ export const Projects = () => {
                       href="https://agency-project-w7even.vercel.app/"
                       target="_blank"
                     >
-                      Site <BiLinkExternal></BiLinkExternal>
+                      Site{" "}
+                      <BiLinkExternal aria-label="Ir para o site do projeto"></BiLinkExternal>
                     </a>
                     <a
                       href="https://github.com/W7EVEN/Agency-Project"
                       target="_blank"
                     >
-                      Código <SiGithub></SiGithub>
+                      Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
                     </a>
                   </S.LinksContainer>
                 </S.TextWrapper>
@@ -230,13 +232,14 @@ export const Projects = () => {
                       href="https://electrum-flame.vercel.app/"
                       target="_blank"
                     >
-                      Site <BiLinkExternal></BiLinkExternal>
+                      Site{" "}
+                      <BiLinkExternal aria-label="Ir para o site do projeto"></BiLinkExternal>
                     </a>
                     <a
                       href="https://github.com/W7EVEN/Electrum"
                       target="_blank"
                     >
-                      Código <SiGithub></SiGithub>
+                      Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
                     </a>
                   </S.LinksContainer>
                 </S.TextWrapper>

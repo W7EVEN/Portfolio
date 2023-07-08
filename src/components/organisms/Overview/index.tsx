@@ -95,7 +95,7 @@ export const Overview = () => {
               aria-label="Link para o meu GitHub"
               target="_blank"
             >
-              <SiGithub></SiGithub>
+              <SiGithub aria-label="Ícone GitHub"></SiGithub>
             </S.AnimatedLink>
             <S.AnimatedLink
               variants={card}
@@ -103,7 +103,7 @@ export const Overview = () => {
               aria-label="Link para o meu LinkedIn"
               target="_blank"
             >
-              <SiLinkedin></SiLinkedin>
+              <SiLinkedin aria-label="Ícone LinkedIn"></SiLinkedin>
             </S.AnimatedLink>
             <S.AnimatedLink
               variants={card}
@@ -111,7 +111,7 @@ export const Overview = () => {
               aria-label="Link para o meu WhatsApp"
               target="_blank"
             >
-              <SiWhatsapp />
+              <SiWhatsapp aria-label="Ícone WhatsApp" />
             </S.AnimatedLink>
           </S.LinksContainer>
         </S.ProgrammerInfo>

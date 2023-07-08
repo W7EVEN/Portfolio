@@ -86,8 +86,14 @@ export const Home = () => {
                   : { opacity: 0, scale: 0.15 }
               }
             >
-              <Link to="main" smooth={true} spy={true}>
-                <SlArrowUp></SlArrowUp>
+              <Link
+                to="main"
+                smooth={true}
+                spy={true}
+                aria-label="Retornar ao topo da página"
+                href="/"
+              >
+                <SlArrowUp aria-label="Ícone seta para cima"></SlArrowUp>
               </Link>
             </S.ReturnButton>
           </main>

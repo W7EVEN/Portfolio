@@ -67,7 +67,7 @@ const Card: React.FC<CardProps> = ({ selected, setSelected, item }) => {
       <div className={`card__container ${selected && "open"}`}>
         <div className="card__content">
           <S.InitialDiv>
-            <SiReact></SiReact>
+            <SiReact aria-label="Ícone React"></SiReact>
             <span>{item.title}</span>
           </S.InitialDiv>
         </div>

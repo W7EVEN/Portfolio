@@ -19,22 +19,22 @@ export const Header = ({ switchElement }: HeaderProps) => {
       <S.ComputerNavbar>
         <S.Navbar>
           <S.NavbarItem>
-            <S.NavbarLink smooth={true} spy={true} to="main">
+            <S.NavbarLink smooth={true} spy={true} to="main" href="/">
               Home
             </S.NavbarLink>
           </S.NavbarItem>
           <S.NavbarItem>
-            <S.NavbarLink smooth={true} spy={true} to="qualities">
+            <S.NavbarLink smooth={true} spy={true} to="qualities" href="/">
               Habilidades
             </S.NavbarLink>
           </S.NavbarItem>
           <S.NavbarItem>
-            <S.NavbarLink smooth={true} spy={true} to="projects">
+            <S.NavbarLink smooth={true} spy={true} to="projects" href="/">
               Projetos
             </S.NavbarLink>
           </S.NavbarItem>
           <S.NavbarItem>
-            <S.NavbarLink smooth={true} spy={true} to="contact">
+            <S.NavbarLink smooth={true} spy={true} to="contact" href="/">
               Contatos
             </S.NavbarLink>
           </S.NavbarItem>
@@ -67,22 +67,22 @@ export const Header = ({ switchElement }: HeaderProps) => {
           </S.MobileNavClose>
           <S.Navbar>
             <S.NavbarItem>
-              <S.NavbarLink smooth={true} spy={true} to="main">
+              <S.NavbarLink smooth={true} spy={true} to="main" href="/">
                 Home
               </S.NavbarLink>
             </S.NavbarItem>
             <S.NavbarItem>
-              <S.NavbarLink smooth={true} spy={true} to="qualities">
+              <S.NavbarLink smooth={true} spy={true} to="qualities" href="/">
                 Habilidades
               </S.NavbarLink>
             </S.NavbarItem>
             <S.NavbarItem>
-              <S.NavbarLink smooth={true} spy={true} to="projects">
+              <S.NavbarLink smooth={true} spy={true} to="projects" href="/">
                 Projetos
               </S.NavbarLink>
             </S.NavbarItem>
             <S.NavbarItem>
-              <S.NavbarLink smooth={true} spy={true} to="contact">
+              <S.NavbarLink smooth={true} spy={true} to="contact" href="/">
                 Contatos
               </S.NavbarLink>
             </S.NavbarItem>

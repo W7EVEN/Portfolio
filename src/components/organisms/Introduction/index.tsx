@@ -8,7 +8,7 @@ import {
   SiAntdesign,
 } from "react-icons/si";
 import { useEffect, useRef } from "react";
-import Avatar from "../../../assets/images/Avatar.jpg";
+import Avatar from "../../../assets/images/Avatar.webp";
 import * as S from "./styles";
 import { motion, useInView, useAnimation } from "framer-motion";
 
@@ -127,25 +127,25 @@ export const Introduction = () => {
             <span>Tecnologias</span>
 
             <S.Tech variants={tech}>
-              <SiHtml5 />
+              <SiHtml5 aria-label="Ícone HTML" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiCss3 />
+              <SiCss3 aria-label="Ícone CSS" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiJavascript />
+              <SiJavascript aria-label="Ícone JavaScript" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiReact />
+              <SiReact aria-label="Ícone React" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiStyledcomponents />
+              <SiStyledcomponents aria-label="Ícone Styled Components" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiSass />
+              <SiSass aria-label="Ícone SASS" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiAntdesign />
+              <SiAntdesign aria-label="Ícone Ant Design" />
             </S.Tech>
           </S.TechContainer>
         </S.TextContainer>
