@@ -41,11 +41,14 @@ export default createGlobalStyle`
 a {
   text-decoration: none;
   transition: color 300ms ease;
+  color: ${({ theme }) => theme.colors.text};
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.primary};
+  }
 }
 
-a:hover {
-  color: ${({ theme }) => theme.colors.primary}
-}
+
 
 body {
   background-color: ${({ theme }) => theme.colors.background};

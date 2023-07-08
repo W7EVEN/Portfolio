@@ -57,10 +57,5 @@ export const LinksContainer = styled.div`
 
   a {
     font-size: 1.2rem;
-    color: ${({ theme }) => theme.colors.text};
-
-    & :hover {
-      ${({ theme }) => theme.colors.primary}
-    }
   }
 `;
