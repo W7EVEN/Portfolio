@@ -1,9 +1,11 @@
 import * as S from "./styles";
-import { stagger } from "framer-motion";
 
-export const Modal = ({ selected, setSelected }) => {
-  const staggerModalItems = stagger(0.1, { startDelay: 0.15 });
+interface ModalProps {
+  selected?: any;
+  setSelected?: any;
+}
 
+export const Modal: React.FC<ModalProps> = ({ selected, setSelected }) => {
   if (!selected) {
     return <></>;
   }
@@ -16,7 +18,7 @@ export const Modal = ({ selected, setSelected }) => {
       animate={{ opacity: 1 }}
     >
       <S.ModalStopPropagation
-        onClick={(e) => e.stopPropagation()}
+        onClick={(e: React.ChangeEvent<any>) => e.stopPropagation()}
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.15 }}

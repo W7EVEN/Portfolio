@@ -6,7 +6,13 @@ import { SiReact } from "react-icons/si";
 import { useAnimation, useInView } from "framer-motion";
 import { items } from "../../molecules/Card/data";
 
-const Card = ({ selected, setSelected, item }) => {
+interface CardProps {
+  selected?: any;
+  setSelected?: any;
+  item?: any;
+}
+
+const Card: React.FC<CardProps> = ({ selected, setSelected, item }) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 
@@ -70,7 +76,10 @@ const Card = ({ selected, setSelected, item }) => {
   );
 };
 
-export const CardsContainer = ({ selected, setSelected }) => {
+export const CardsContainer: React.FC<CardProps> = ({
+  selected,
+  setSelected,
+}) => {
   const ref = useRef(null);
   const isInView = useInView(ref);
 

@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import { Link } from "react-router-dom";
 import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 import { useEffect, useRef, useState } from "react";
 import { Modal } from "../Modal";

@@ -21,13 +21,6 @@ export const Home = () => {
   const [theme, setTheme] = useState(darkModeQuery.matches ? dark : light);
   const [scrollActive, setScrollActive] = useState<Boolean>(false);
 
-  const container = {
-    hide: { opacity: 0 },
-    show: {
-      opacity: 1,
-    },
-  };
-
   useEffect(() => {
     darkModeQuery.addListener((e) => {
       setTheme(e.matches ? dark : light);

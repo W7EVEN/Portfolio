@@ -1,4 +1,3 @@
-import React from "react";
 import { PiAirplaneBold } from "react-icons/pi";
 
 export interface CardData<T> {

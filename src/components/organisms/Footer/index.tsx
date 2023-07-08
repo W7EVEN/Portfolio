@@ -1,7 +1,4 @@
-import React from "react";
 import * as S from "./styles";
-import { SlArrowUp } from "react-icons/sl";
-import { Link } from "react-scroll";
 
 export const Footer = () => {
   return (
