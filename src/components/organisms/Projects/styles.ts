@@ -116,7 +116,6 @@ export const LinksContainer = styled.div`
 
   a {
     font-size: 1.2rem;
-    color: ${({ theme }) => theme.colors.text};
     align-items: center;
     display: flex;
     gap: 4px;
