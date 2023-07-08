@@ -77,14 +77,6 @@ export const Projects = () => {
               <S.Centralizer>
                 <S.ImageContainer>
                   <S.ProjectImage
-                    whileHover={{
-                      translateY: "-70%",
-                      transition: { duration: 5, ease: "easeInOut" },
-                    }}
-                    whileTap={{
-                      translateY: "-70%",
-                      transition: { duration: 5, ease: "easeInOut" },
-                    }}
                     transition={{ type: "spring", damping: 6, stiffness: 30 }}
                     src={Visao}
                     alt="Projeto"
@@ -137,14 +129,6 @@ export const Projects = () => {
               <S.Centralizer>
                 <S.ImageContainer>
                   <S.ProjectImage
-                    whileHover={{
-                      translateY: "-57%",
-                      transition: { duration: 5, ease: "easeInOut" },
-                    }}
-                    whileTap={{
-                      translateY: "-57%",
-                      transition: { duration: 5, ease: "easeInOut" },
-                    }}
                     transition={{ type: "spring", damping: 6, stiffness: 30 }}
                     src={Agency}
                     alt="Projeto"
@@ -196,14 +180,6 @@ export const Projects = () => {
               <S.Centralizer>
                 <S.ImageContainer>
                   <S.ProjectImage
-                    whileHover={{
-                      translateY: "-53%",
-                      transition: { duration: 5, ease: "easeInOut" },
-                    }}
-                    whileTap={{
-                      translateY: "-53%",
-                      transition: { duration: 5, ease: "easeInOut" },
-                    }}
                     transition={{
                       type: "spring",
                       damping: 6,
