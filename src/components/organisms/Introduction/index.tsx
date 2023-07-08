@@ -103,12 +103,11 @@ export const Introduction = () => {
             Sou
             <S.TypeAnimationCustom
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 " Desenvolvedor Front-end",
-                1500, // wait 1s before replacing "Mice" with "Hamsters"
+                1500,
                 " UI/UX Designer",
                 1500,
-                " Editor de vídeos",
+                " Web Designer",
                 1500,
               ]}
               wrapper="span"
