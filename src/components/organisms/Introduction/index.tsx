@@ -1,11 +1,11 @@
 import {
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
   SiReact,
-  SiStyledcomponents,
-  SiSass,
   SiAntdesign,
+  SiNextdotjs,
+  SiNestjs,
+  SiTypescript,
+  SiDaisyui,
+  SiMongodb,
 } from "react-icons/si";
 import { useEffect, useRef } from "react";
 import Avatar from "../../../assets/images/Avatar.webp";
@@ -126,25 +126,25 @@ export const Introduction = () => {
             <span>Tecnologias</span>
 
             <S.Tech variants={tech}>
-              <SiHtml5 aria-label="Ícone HTML" />
-            </S.Tech>
-            <S.Tech variants={tech}>
-              <SiCss3 aria-label="Ícone CSS" />
-            </S.Tech>
-            <S.Tech variants={tech}>
-              <SiJavascript aria-label="Ícone JavaScript" />
-            </S.Tech>
-            <S.Tech variants={tech}>
               <SiReact aria-label="Ícone React" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiStyledcomponents aria-label="Ícone Styled Components" />
+              <SiNextdotjs aria-label="Ícone NextJS" />
             </S.Tech>
             <S.Tech variants={tech}>
-              <SiSass aria-label="Ícone SASS" />
+              <SiNestjs aria-label="Ícone NestJS" />
+            </S.Tech>
+            <S.Tech variants={tech}>
+              <SiMongodb aria-label="Ícone MongoDB" />
+            </S.Tech>
+            <S.Tech variants={tech}>
+              <SiTypescript aria-label="Ícone TypeScript" />
             </S.Tech>
             <S.Tech variants={tech}>
               <SiAntdesign aria-label="Ícone Ant Design" />
+            </S.Tech>
+            <S.Tech variants={tech}>
+              <SiDaisyui aria-label="Ícone DaisyUI" />
             </S.Tech>
           </S.TechContainer>
         </S.TextContainer>

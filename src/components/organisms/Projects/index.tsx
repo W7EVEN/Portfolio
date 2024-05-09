@@ -3,9 +3,9 @@ import { SiGithub } from "react-icons/si";
 import { BiLinkExternal } from "react-icons/bi";
 import { useAnimation, useInView } from "framer-motion";
 import * as S from "./styles";
-import Visao from "../../../assets/images/Visao.webp";
+import NexversoDashboard from "../../../assets/images/NexversoDashboard.webp";
 import Agency from "../../../assets/images/Agency.webp";
-import Electrum from "../../../assets/images/Electrum.webp";
+import Nexverso from "../../../assets/images/Nexverso.webp";
 
 export const Projects = () => {
   const ref = useRef(null);
@@ -78,38 +78,80 @@ export const Projects = () => {
                 <S.ImageContainer>
                   <S.ProjectImage
                     transition={{ type: "spring", damping: 6, stiffness: 30 }}
-                    src={Visao}
+                    src={Nexverso}
                     alt="Projeto"
                   />
                 </S.ImageContainer>
                 <S.TextWrapper>
-                  <S.ProjectTitle>Visão</S.ProjectTitle>
+                  <S.ProjectTitle>Nexverso</S.ProjectTitle>
                   <p>
-                    Explore seu potencial cognitivo ao máximo!. Projeto em
-                    andamento de uma plataforma de estudos. Foram aplicadas
-                    tecnologias extremamente modernas e performáticas para o
-                    desenvolvimento do site. Sua interface foi pensada para
-                    utilização em computadores.
+                    Gamifique o seu ensino! O Nexverso é um plataforma de
+                    gamificação escolar, e essa é a página de apresentação do
+                    projeto, que foi feita com as mais modernas tecnologias web
+                    para Interfaces de Usuário.
                   </p>
                   <S.TechWrapper>
-                    <S.Tech>React</S.Tech>
-                    <S.Tech>SASS</S.Tech>
-                    <S.Tech>JavaScript</S.Tech>
+                    <S.Tech>NextJS</S.Tech>
+                    <S.Tech>DaisyUI</S.Tech>
                   </S.TechWrapper>
                   <S.LinksContainer>
-                    <a
-                      href="https://pesquisas-visao.vercel.app/"
-                      target="_blank"
-                    >
+                    <a href="https://nexverso.com" target="_blank">
                       Site{" "}
                       <BiLinkExternal aria-label="Ir para o site do projeto"></BiLinkExternal>
                     </a>
-                    <a
+                    {/* <a
                       href="https://github.com/W7EVEN/Brainful"
                       target="_blank"
                     >
                       Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
+                    </a> */}
+                  </S.LinksContainer>
+                </S.TextWrapper>
+              </S.Centralizer>
+            </S.Project>
+          </S.ProjectNormalizer>
+          <S.ProjectNormalizer>
+            <S.Project
+              variants={card}
+              initial={"hidden"}
+              animate={mainControls}
+            >
+              <S.CirclesContainer>
+                <S.DarkSpan></S.DarkSpan>
+                <S.NormalSpan></S.NormalSpan>
+                <S.LightSpan></S.LightSpan>
+              </S.CirclesContainer>
+              <S.Centralizer>
+                <S.ImageContainer>
+                  <S.ProjectImage
+                    transition={{ type: "spring", damping: 6, stiffness: 30 }}
+                    src={NexversoDashboard}
+                    alt="Projeto"
+                  />
+                </S.ImageContainer>
+                <S.TextWrapper>
+                  <S.ProjectTitle>Nexverso - Professor</S.ProjectTitle>
+                  <p>
+                    Transforme a sua escola em um jogo! O Nexverso é um projeto
+                    de gamificação para escolas. É um sistema Full Stack para
+                    professores e diretores coordenarem a escola gamificada.
+                  </p>
+                  <S.TechWrapper>
+                    <S.Tech>React</S.Tech>
+                    <S.Tech>NestJS</S.Tech>
+                    <S.Tech>Styled Components</S.Tech>
+                  </S.TechWrapper>
+                  <S.LinksContainer>
+                    <a href="https://dashboard.nexverso.com" target="_blank">
+                      Site{" "}
+                      <BiLinkExternal aria-label="Ir para o site do projeto"></BiLinkExternal>
                     </a>
+                    {/* <a
+                      href="https://github.com/W7EVEN/Brainful"
+                      target="_blank"
+                    >
+                      Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
+                    </a> */}
                   </S.LinksContainer>
                 </S.TextWrapper>
               </S.Centralizer>
@@ -157,62 +199,6 @@ export const Projects = () => {
                     </a>
                     <a
                       href="https://github.com/W7EVEN/Agency-Project"
-                      target="_blank"
-                    >
-                      Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
-                    </a>
-                  </S.LinksContainer>
-                </S.TextWrapper>
-              </S.Centralizer>
-            </S.Project>
-          </S.ProjectNormalizer>
-          <S.ProjectNormalizer>
-            <S.Project
-              variants={card}
-              initial={"hidden"}
-              animate={mainControls}
-            >
-              <S.CirclesContainer>
-                <S.DarkSpan></S.DarkSpan>
-                <S.NormalSpan></S.NormalSpan>
-                <S.LightSpan></S.LightSpan>
-              </S.CirclesContainer>
-              <S.Centralizer>
-                <S.ImageContainer>
-                  <S.ProjectImage
-                    transition={{
-                      type: "spring",
-                      damping: 6,
-                      stiffness: 30,
-                    }}
-                    src={Electrum}
-                    alt="Projeto"
-                  />
-                </S.ImageContainer>
-                <S.TextWrapper>
-                  <S.ProjectTitle>Electrum</S.ProjectTitle>
-                  <p>
-                    Um marketplace para todas as suas necessidades! Electrum é
-                    um website intuitivo e amigável ao usuário feito com base
-                    nas tecnologias primordiais do desenvolvimento web.
-                    Atualmente sua interface está finalizada para visualização
-                    em computadores e notebooks.
-                  </p>
-                  <S.TechWrapper>
-                    <S.Tech>HTML</S.Tech>
-                    <S.Tech>SASS</S.Tech>
-                    <S.Tech>JavaScript</S.Tech>
-                  </S.TechWrapper>
-                  <S.LinksContainer>
-                    <a
-                      href="https://electrum-flame.vercel.app/"
-                      target="_blank"
-                    >
-                      Site{" "}
-                      <BiLinkExternal aria-label="Ir para o site do projeto"></BiLinkExternal>
-                    </a>
-                    <a
-                      href="https://github.com/W7EVEN/Electrum"
                       target="_blank"
                     >
                       Código <SiGithub aria-label="Ícone GitHub"></SiGithub>
